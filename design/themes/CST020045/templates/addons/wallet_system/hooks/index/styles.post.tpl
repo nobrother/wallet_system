@@ -1,0 +1,1 @@
+{style src="addons/wallet_system/styles.less"}

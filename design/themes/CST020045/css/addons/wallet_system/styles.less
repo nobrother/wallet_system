@@ -1,0 +1,289 @@
+.ty-wallet-info__a{
+    color: #fff;
+	&:hover{
+		color: #999;
+	}
+}
+
+.ty-wallet-my_wallet{
+	
+	/*
+	 * Banner
+	 */
+	.ty-fullwidth-banner{
+		margin-bottom: 30px;
+		background-image: url(images/iStock_100035715_XXXLARGE.jpg);
+		color: #fff;
+		
+		.ty-wallet-balance{
+			margin-bottom: 45px;
+			font-size: 50px;
+			line-height: 1.4;
+		}
+		
+		.ty-action-buttons{
+			max-width: 1170px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		.btn-outline-only{
+			font-size: 25px;
+			width: 100%;
+			max-width: 325px;
+			padding: 23px 15px;
+		}
+	}
+	
+	.ty-wallet-actions{
+		margin-bottom: 50px;
+		
+		> .row{
+			.row(40px);
+			
+			> .span8 + .span8{
+				border-left: 1px solid #a5a5a5;
+			}
+		}
+	}
+	
+	.ty-wallet-action-card{
+		.card-header{
+			text-align: center;
+			font-size: 25px;
+			padding: 20px 0;
+			border-bottom: 1px solid #a5a5a5;
+			margin-bottom: 25px;
+		}
+		
+		.card-body{
+			
+			min-height: 90px;
+			margin-bottom: 20px;
+			
+			.ty-wallet-balance{
+				text-align: center;
+			}
+			
+			.ty-wallet-balance-label, .title{
+				font-size: 20px;
+			}
+		
+			.ty-wallet-balance-label{
+				display: block;					
+				margin-bottom: 18px;
+			}
+			
+			.ty-wallet-balance-amount{
+				display: block;
+				font-size: 35px;
+			}
+			
+			.title{
+				margin-bottom: 10px;
+			}
+		}
+		
+		.card-footer{
+			padding-bottom: 25px;
+			.row{
+				.row(13px);
+			}
+		}
+		
+		.ty-input-text, .btn{
+				width: 100%;
+			}
+			
+		.btn{
+			font-size: 20px;
+			padding: 7px 15px;
+		}
+		
+		.ty-input-text{
+			height: 53px;
+			font-size: 14px;
+			padding: 4px 13px;
+		}
+	}
+	
+	.ty-wallet-transaction{
+		margin-bottom: 30px;
+		> .header{
+			text-align: center;
+			font-size: 25px;
+			padding-bottom: 25px;
+			border-bottom: 1px solid #a5a5a5;
+			margin-bottom: 25px;
+		}
+	}
+	
+	.ty-wallet-credit__table{
+		.item-ref-id{
+			max-width: 290px;
+		}
+		.item-transaction-type{
+			max-width: 170px;
+		}
+	
+		&, & th{
+			text-align: center;
+		}
+		
+		th{
+			padding: 16px 13px;
+			background-color: #d8d8d8;
+		}
+		
+		td{
+			padding: 18px 13px;
+		}
+		
+		.ty-price{
+			.ty-price-num{
+				font-weight: 300;
+				margin-left: 2px;
+			}
+		}
+		
+		.highlight-red{
+			color: #ec1748;
+		}
+		
+		ty-price-num{
+			margin-left: 3px;
+		}
+	}
+	
+	&.no-transfer, &.no-top-up{
+		.ty-fullwidth-banner .ty-action-buttons{
+			max-width: 750px;
+		}
+		
+		.ty-wallet-actions{			
+			> .row{				
+				> .span8{
+					width: 100%;
+				}
+			}
+			
+			.card-footer, .card-body{
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 500px;
+			}
+		}
+	}
+	
+	&.no-transfer.no-top-up{
+		.ty-fullwidth-banner .ty-wallet-balance{
+			margin-bottom: 0;
+		}
+	}
+	
+	.active{
+		&.btn-outline-only{
+			border: 3px solid #ec1748;
+			color: #ec1748;
+	
+			&:hover, &:focus{
+					color: #fff;
+					background-color: #ec1748;
+			}
+		}
+		&.ty-input-text{
+			border: 1px solid #ec1748;
+			&:focus{
+				box-shadow: none;
+			}
+		}
+		&.btn-default{
+			border: 3px solid #ec1748;
+			background-color: #ec1748;
+			
+			&:hover, &:focus{
+				color: #fff;
+				background-color: #ec1748;
+			}
+		}
+	}
+}
+
+.ty-checkout__billing-tabs{
+    .ty-step__title-active{
+        margin-bottom: 30px;
+    }
+}
+.ty-customer-notes, .ty-subheader, .ty-newsletters subscription-container, .ty-newsletters__item, .ty-wallet-checkout-section-body{
+	margin-left: 20px;
+}
+.ty-checkout__billing-options {
+	.ty-customer-notes, .ty-subheader, .ty-newsletters subscription-container, .ty-newsletters__item{
+		margin-left: 0;
+	}
+}
+.btn-use-wallet-cash{
+	margin-top: 10px;
+}
+
+@media (max-width: 1028px){
+	.ty-wallet-my_wallet{
+		.ty-wallet-transaction{
+			overflow: auto;
+		}
+	}
+}
+
+@media (max-width: 767px){
+	.ty-wallet-my_wallet{
+	
+		.ty-table{
+			td{
+				display: flex;
+			}
+			
+			tr{
+				margin-bottom: 30px;
+			}
+		}
+		
+		.ty-table__responsive-header {
+			float: none;
+			flex: 0 0 95px;
+		}
+	}
+}
+
+
+@media (max-width: 480px){
+	.ty-wallet-my_wallet{
+		.ty-wallet-transaction{
+			overflow: hidden;
+		}
+		
+		.ty-items-distribute{
+			display: block;
+			
+			.btn{
+				margin-bottom: 15px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+		
+		.ty-wallet-actions, .card-footer{
+			> .row > .span8{
+				margin-bottom: 15px;
+				&:last-child{
+					margin-bottom: 0;
+					border: none;
+				}
+			}
+		}
+		
+		.item-ref-id{
+			.word-break();
+		}
+	}
+}
