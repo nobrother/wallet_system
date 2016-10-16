@@ -6,6 +6,8 @@
     {include file="addons/wallet_system/templates/credit_transfer.tpl" wallet_data=$wallet_data}
 {elseif $wallet_data.source == 'credit_by_admin'}
 		{include file="addons/wallet_system/templates/credit_by_admin.tpl" wallet_data=$wallet_data}
+{elseif $wallet_data.source == 'new_registration'}
+		{include file="addons/wallet_system/templates/credit_by_new_registration.tpl" wallet_data=$wallet_data}
 {else}
 		{include file="addons/wallet_system/templates/credit_refund.tpl" wallet_data=$wallet_data}
 {/if}

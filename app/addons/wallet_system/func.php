@@ -929,6 +929,10 @@ function fn_create_return_wallet($order_id, $amount, $return_id, $user_id)
         $email_subject = 'Credit by Reddeals';
         $tpl = 'credit_by_admin.tpl';
       }
+      elseif ($wallet_data['source'] == 'new_registration') {
+        $email_subject = 'Credit by Reddeals';
+        $tpl = 'credit_by_new_registration.tpl';
+      }
       else{
         $email_subject = 'Credit Refund';
         $tpl = 'credit_refund.tpl';

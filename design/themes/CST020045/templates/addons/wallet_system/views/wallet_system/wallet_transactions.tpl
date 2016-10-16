@@ -33,6 +33,8 @@
                                 {__("transfer")}
                             {elseif $transaction.source == 'credit_by_admin'}
                                 by Red Deals
+                            {elseif $transaction.source == 'new_registration'}
+                                by New Registration
                             {else}
                                 {__("refund")}
                             {/if}

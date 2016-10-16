@@ -2,7 +2,7 @@
 
 Dear {$wallet_data.user_name},<br /><br />
 
-Hurray! You have successfully received <b>{include file="common/price.tpl" value=$wallet_data.amount}</b> in your Red Deals wallet and the amount will be reflected in your account. 
+Hurray! You have successfully received <b>{include file="common/price.tpl" value=$wallet_data.amount}</b> in your Red Deals wallet and the amount will be reflected in your account. <br /><br />
 
 Please find below your updated wallet details:<br /><br />
 
